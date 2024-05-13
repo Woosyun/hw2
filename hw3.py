@@ -2,6 +2,7 @@ import featuring
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
 import pandas as pd
+import joblib
 
 def bias_module(X):
     y = X['Survived']
@@ -12,6 +13,7 @@ def bias_module(X):
 
     lr = LogisticRegression(class_weight='balanced')
     lr.fit(X, y)
+    joblib.dump(lr, 'model.pkl')
 
     predY = lr.predict(testX)
     accuracy = accuracy_score(testY, predY)

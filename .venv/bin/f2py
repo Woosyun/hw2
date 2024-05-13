@@ -1,4 +1,4 @@
-#!/home/woo/gist/24_1/de/hw2/.venv/bin/python3
+#!/home/ubuntu/gist/hw3/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

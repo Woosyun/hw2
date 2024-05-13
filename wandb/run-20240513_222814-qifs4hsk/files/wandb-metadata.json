@@ -1,0 +1,99 @@
+{
+    "os": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-05-13T13:28:16.062903",
+    "startedAt": "2024-05-13T13:28:14.561353",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/Woosyun/titanic-survival-prediction.git",
+        "commit": "00934792bb20c35f3f825fe32130aa50155d070f"
+    },
+    "email": "tjddbs2207@gmail.com",
+    "root": "/home/ubuntu/gist/hw3",
+    "host": "DESKTOP-7HT3BMC",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/gist/hw3/.venv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3892.5809999999988,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3892.581,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 18.388473510742188
+        }
+    },
+    "memory": {
+        "total": 7.409412384033203
+    }
+}
