@@ -3,7 +3,6 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 label_encoder = LabelEncoder()
 
-### Extract title from Name column
 def categorize(name, new_titles):
     for new_title in new_titles:
         if new_title in str(name):
@@ -25,7 +24,7 @@ def categorize_title(x):
             return "Mrs"
     else:
         return title
-    
+
 def featuring(X):
     title_list=['Mrs', 'Mr', 'Master', 'Miss', 'Major', 'Rev', 'Dr', 'Ms', 'Mlle','Col', 'Capt', 'Mme', 'Countess', 'Don', 'Jonkheer']
     X['Title']=X['Name'].map(lambda x: categorize(x, title_list))
@@ -37,5 +36,10 @@ def featuring(X):
     X['Sex']=label_encoder.fit_transform(X['Sex'])
     X['Embarked']=label_encoder.fit_transform(X['Embarked'])
     X['Title']=label_encoder.fit_transform(X['Title'])
+
+    columns_to_drop = ['PassengerId', 'Ticket', 'Cabin', 'Survived']
+    X.drop(columns=[col for col in columns_to_drop if col in X], inplace=True)
+
+    X = X.fillna(X.mean())
 
     return X
